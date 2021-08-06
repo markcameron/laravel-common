@@ -11,7 +11,7 @@ class Decorator
      * @param array $contracts
      * @throws Exception
      */
-    protected static function uuid(array $contracts)
+    public static function uuid(array $contracts)
     {
         if (empty($contracts)) {
             return;
@@ -34,7 +34,7 @@ class Decorator
      * @param array $contracts
      * @throws Exception
      */
-    protected static function migrations(array $contracts)
+    public static function migrations(array $contracts)
     {
         if (empty($contracts)) {
             return;
