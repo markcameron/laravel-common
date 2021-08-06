@@ -32,9 +32,10 @@ class Decorator
 
     /**
      * @param array $contracts
+     * @param string|null $config
      * @throws Exception
      */
-    public static function migrations(array $contracts)
+    public static function migrations(array $contracts, ?string $config = null)
     {
         if (empty($contracts)) {
             return;
@@ -43,10 +44,10 @@ class Decorator
         $decorators = config('asseco-common.migration_decorators');
 
         foreach ($contracts as $contract) {
-            $decorator = Arr::get($decorators, config('asseco-common.migration'));
+            $decorator = Arr::get($decorators, $config ?: config('asseco-common.migration'));
 
             if (!$decorator) {
-                throw new Exception('Migration decorator missing.');
+                return;
             }
 
             app()->extend($contract, function ($model, $app) use ($decorator) {

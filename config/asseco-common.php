@@ -11,7 +11,6 @@ return [
     /**
      * Should primary keys be UUIDs.
      */
-    'uuid'                 => false,
     'uuid_decorator'       => Uuid::class,
 
     /**
