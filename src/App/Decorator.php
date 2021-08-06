@@ -8,16 +8,16 @@ use Illuminate\Support\Arr;
 class Decorator
 {
     /**
+     * @param array $contracts
      * @throws Exception
      */
-    protected static function uuid()
+    protected static function uuid(array $contracts)
     {
-        $contracts = config('asseco-common.contracts');
-        $decorator = config('asseco-common.uuid_decorator');
-
         if (empty($contracts)) {
             return;
         }
+
+        $decorator = config('asseco-common.uuid_decorator');
 
         if (!$decorator) {
             throw new Exception('Uuid decorator missing.');
@@ -31,16 +31,16 @@ class Decorator
     }
 
     /**
+     * @param array $contracts
      * @throws Exception
      */
-    protected static function migrations()
+    protected static function migrations(array $contracts)
     {
-        $contracts = config('asseco-common.contracts');
-        $decorators = config('asseco-common.migration_decorators');
-
         if (empty($contracts)) {
             return;
         }
+
+        $decorators = config('asseco-common.migration_decorators');
 
         foreach ($contracts as $contract) {
             $decorator = Arr::get($decorators, config('asseco-common.migration'));

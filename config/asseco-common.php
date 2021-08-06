@@ -9,15 +9,6 @@ use Asseco\Common\App\MigrationMethodPicker;
 return [
 
     /**
-     * Eloquent contracts to decorate. In order for decorator to work
-     * the original Eloquent model class must have an interface which
-     * is bound to container before calling decorators on it.
-     */
-    'contracts' => [
-        //
-    ],
-
-    /**
      * Should primary keys be UUIDs.
      */
     'uuid'                 => false,
