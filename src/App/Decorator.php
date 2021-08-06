@@ -20,7 +20,7 @@ class Decorator
         }
 
         if (!$decorator) {
-            throw new Exception("Uuid decorator missing.");
+            throw new Exception('Uuid decorator missing.');
         }
 
         foreach ($contracts as $contract) {
@@ -43,11 +43,10 @@ class Decorator
         }
 
         foreach ($contracts as $contract) {
-
             $decorator = Arr::get($decorators, config('asseco-common.migration'));
 
             if (!$decorator) {
-                throw new Exception("Migration decorator missing.");
+                throw new Exception('Migration decorator missing.');
             }
 
             app()->extend($contract, function ($model, $app) use ($decorator) {
