@@ -49,7 +49,6 @@ class Decorator
         }
 
         foreach ($contracts as $contract) {
-
             app()->extend($contract, function ($model, $app) use ($decorator) {
                 return new $decorator($model);
             });
