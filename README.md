@@ -3,3 +3,8 @@
 # Common
 
 Providing common methods and classes needed in most of our packages.
+
+Including [blueprint package](https://github.com/asseco-voice/laravel-blueprint-audit) to provide
+additional migration methods.
+
+Also, including ``Uuids`` trait for models using UUID as a primary key. 
