@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/asseco-voice/laravel-blueprint-audit.git",
-                "reference": "f49e2fbaca63bf6c00f8ab7f7c567607e2de2fbd"
+                "reference": "2e804d8cbccde33c7af82af7257abde5c0c69c36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/asseco-voice/laravel-blueprint-audit/zipball/f49e2fbaca63bf6c00f8ab7f7c567607e2de2fbd",
-                "reference": "f49e2fbaca63bf6c00f8ab7f7c567607e2de2fbd",
+                "url": "https://api.github.com/repos/asseco-voice/laravel-blueprint-audit/zipball/2e804d8cbccde33c7af82af7257abde5c0c69c36",
+                "reference": "2e804d8cbccde33c7af82af7257abde5c0c69c36",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
                 "issues": "https://github.com/asseco-voice/laravel-blueprint-audit/issues",
                 "source": "https://github.com/asseco-voice/laravel-blueprint-audit/tree/master"
             },
-            "time": "2021-08-06T12:03:38+00:00"
+            "time": "2021-08-09T11:44:53+00:00"
         },
         {
             "name": "brick/math",
