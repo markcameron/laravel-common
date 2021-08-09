@@ -12,7 +12,7 @@ class MigrationMethodPicker
 
     public static function pick(Blueprint $table, string $migrationConfig = null)
     {
-        switch ($migrationConfig ?: config('asseco-common.migration')) {
+        switch ($migrationConfig) {
             case self::SOFT:
                 $table->timestamps();
                 $table->softDeletes();
