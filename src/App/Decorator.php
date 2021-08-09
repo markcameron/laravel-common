@@ -34,9 +34,10 @@ class Decorator
      * @param array $contracts
      * @param string|null $decorator
      */
-    public static function migrations(array $contracts, string $decorator)
+    public static function migrations(array $contracts, ?string $decorator = null)
     {
-        if (empty($contracts)) {
+        // Need to have decorator nullable for default cases when you're not decorating anything.
+        if (empty($contracts) || !$decorator) {
             return;
         }
 
