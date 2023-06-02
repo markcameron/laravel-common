@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Asseco\Common;
 
+use Asseco\Common\App\Context\Context;
+use Asseco\Common\App\Context\ContextModel;
 use Closure;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\SQLiteBuilder;
@@ -31,6 +33,8 @@ class CommonServiceProvider extends ServiceProvider
         ], 'asseco-common');
 
         $this->hotfixSqlite();
+
+        $this->app->bind(Context::class, ContextModel::class);
     }
 
     /**
