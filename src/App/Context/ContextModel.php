@@ -31,7 +31,7 @@ class ContextModel implements Context
     }
 
     /**
-     * @param string $token
+     * @param  string  $token
      */
     public function setToken(string $token): void
     {
@@ -47,7 +47,7 @@ class ContextModel implements Context
     }
 
     /**
-     * @param string $xCorrelationId
+     * @param  string  $xCorrelationId
      */
     public function setXCorrelationId(string $xCorrelationId): void
     {
@@ -63,7 +63,7 @@ class ContextModel implements Context
     }
 
     /**
-     * @param string $xTenantId
+     * @param  string  $xTenantId
      */
     public function setXTenantId(string $xTenantId): void
     {

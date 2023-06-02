@@ -9,5 +9,4 @@ interface Context
     public function getXCorrelationId(): ?string;
 
     public static function getCorrelationHeaderName(): string;
-
 }
