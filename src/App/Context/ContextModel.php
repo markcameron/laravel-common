@@ -6,16 +6,16 @@ use Illuminate\Support\Str;
 
 class ContextModel implements Context
 {
-    public string $token;
-    public string $xCorrelationId;
-    public string $xTenantId;
+    public ?string $token;
+    public ?string $xCorrelationId;
+    public ?string $xTenantId;
 
     /**
      * @param $token
      * @param $xCorrelationId
      * @param $xTenantId
      */
-    public function __construct($token = '', $xCorrelationId = '', $xTenantId = '')
+    public function __construct($token = null, $xCorrelationId = null, $xTenantId = null)
     {
         $this->token = $token;
         $this->xCorrelationId = $xCorrelationId ?: Str::uuid()->toString();
