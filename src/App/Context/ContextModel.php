@@ -11,9 +11,9 @@ class ContextModel implements Context
     public ?string $xTenantId;
 
     /**
-     * @param $token
-     * @param $xCorrelationId
-     * @param $xTenantId
+     * @param  $token
+     * @param  $xCorrelationId
+     * @param  $xTenantId
      */
     public function __construct($token = null, $xCorrelationId = null, $xTenantId = null)
     {
